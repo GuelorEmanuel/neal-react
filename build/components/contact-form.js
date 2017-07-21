@@ -61,7 +61,7 @@ var ContactForm = exports.ContactForm = function (_React$Component) {
           "form",
           { className: "form-inline row", onSubmit: this.handleSubmit },
           _react2.default.createElement(
-            _bootstrap.Col,
+            _bootstrap.Row,
             { className: "form-group", size: ["xs-12", "lg-5"] },
             _react2.default.createElement(
               "label",
@@ -72,7 +72,7 @@ var ContactForm = exports.ContactForm = function (_React$Component) {
               onChange: this.handleChange })
           ),
           _react2.default.createElement(
-            _bootstrap.Col,
+            _bootstrap.Row,
             { className: "form-group", size: ["xs-12", "lg-5"] },
             _react2.default.createElement(
               "label",
