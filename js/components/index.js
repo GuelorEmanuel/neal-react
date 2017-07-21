@@ -13,6 +13,8 @@ export * from "./section";
 export * from "./signup-inline";
 export * from "./signup-modal";
 export * from "./team";
+export * from "./contact-form";
+export * from "./feature";
 export * from "./vendor/segment";
 export * from "./vendor/stripe";
 export * from "./vendor/typeform";
