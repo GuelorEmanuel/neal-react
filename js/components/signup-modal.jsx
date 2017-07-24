@@ -70,13 +70,24 @@ export class SignupModal extends React.Component {
     if (this.props.onSubmit) { this.props.onSubmit(this.state); }
   };
 
-  renderBody = () => {
+  // renderBody = () => {
+  //   if (this.props.children) return this.props.children;
+  //   return (
+  //     <div>
+  //       <SignupModal.Input name="name" required label="Name" placeholder="Name"/>
+  //       <SignupModal.Input type="email" required name="email" label="Email" placeholder="Email"/>
+  //       <SignupModal.Input type="password" required name="password" label="Password" placeholder="Password"/>
+  //     </div>
+  //   );
+  // };
+
+   renderBody = () => {
     if (this.props.children) return this.props.children;
     return (
       <div>
         <SignupModal.Input name="name" required label="Name" placeholder="Name"/>
         <SignupModal.Input type="email" required name="email" label="Email" placeholder="Email"/>
-        <SignupModal.Input type="password" required name="password" label="Password" placeholder="Password"/>
+        <SignupModal.Input type="text" required label="occupation" placeholder="What kind of work do you do?"/>
       </div>
     );
   };
