@@ -137,10 +137,21 @@ var SignupModal = exports.SignupModal = function (_React$Component3) {
         null,
         _react2.default.createElement(SignupModal.Input, { name: "name", required: true, label: "Name", placeholder: "Name" }),
         _react2.default.createElement(SignupModal.Input, { type: "email", required: true, name: "email", label: "Email", placeholder: "Email" }),
-        _react2.default.createElement(SignupModal.Input, { type: "password", required: true, name: "password", label: "Password", placeholder: "Password" })
+        _react2.default.createElement(SignupModal.Input, { type: "text", required: true, label: "occupation", placeholder: "What kind of work do you do?" })
       );
     }, _temp), _possibleConstructorReturn(_this3, _ret);
   }
+
+  // renderBody = () => {
+  //   if (this.props.children) return this.props.children;
+  //   return (
+  //     <div>
+  //       <SignupModal.Input name="name" required label="Name" placeholder="Name"/>
+  //       <SignupModal.Input type="email" required name="email" label="Email" placeholder="Email"/>
+  //       <SignupModal.Input type="password" required name="password" label="Password" placeholder="Password"/>
+  //     </div>
+  //   );
+  // };
 
   _createClass(SignupModal, [{
     key: "render",
