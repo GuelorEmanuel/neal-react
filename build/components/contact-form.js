@@ -59,48 +59,49 @@ var ContactForm = exports.ContactForm = function (_React$Component) {
         { className: "neal-signup-inline" },
         _react2.default.createElement(
           "form",
-          { className: "form-inline row", onSubmit: this.handleSubmit },
+          { role: "form", id: "contactForm", onSubmit: this.handleSubmit },
           _react2.default.createElement(
-            _bootstrap.Row,
-            { className: "form-group", size: ["xs-12", "lg-5"] },
+            "div",
+            { className: "row" },
             _react2.default.createElement(
-              "label",
-              { className: "sr-only", htmlFor: "name" },
-              "First lastname"
+              "div",
+              { className: "form-group col-sm-6" },
+              _react2.default.createElement(
+                "label",
+                { "for": "name", className: "h4 pull-left" },
+                "Name"
+              ),
+              _react2.default.createElement("input", { type: "text", className: "form-control", id: "name",
+                placeholder: "First and Lastname", name: "name",
+                onChange: this.handleChange, required: true })
             ),
-            _react2.default.createElement("input", { type: "text", required: true, className: "form-control", name: "name", placeholder: "First and LastName",
-              onChange: this.handleChange })
+            _react2.default.createElement(
+              "div",
+              { className: "form-group col-sm-6" },
+              _react2.default.createElement(
+                "label",
+                { "for": "email", className: "h4 pull-left" },
+                "Email"
+              ),
+              _react2.default.createElement("input", { type: "email", className: "form-control", id: "email", placeholder: "Enter email",
+                name: "email", onChange: this.handleChange, required: true })
+            )
           ),
           _react2.default.createElement(
-            _bootstrap.Row,
-            { className: "form-group", size: ["xs-12", "lg-5"] },
+            "div",
+            { className: "form-group" },
             _react2.default.createElement(
               "label",
-              { className: "sr-only", htmlFor: "email" },
-              "Email address"
-            ),
-            _react2.default.createElement("input", { type: "email", required: true, className: "form-control", name: "email", placeholder: "Email",
-              onChange: this.handleChange })
-          ),
-          _react2.default.createElement(
-            _bootstrap.Col,
-            { className: "form-group", size: ["xs-12", "lg-5"] },
-            _react2.default.createElement(
-              "label",
-              { className: "sr-only", htmlFor: "message" },
+              { "for": "message", className: "h4 pull-left" },
               "Message"
             ),
-            _react2.default.createElement("input", { type: "text", required: true, className: "form-control", name: "message", placeholder: "What's on your mind?",
-              onChange: this.handleChange })
+            _react2.default.createElement("textarea", { id: "message", className: "form-control", rows: "5", placeholder: "Enter your message",
+              name: "message", onChange: this.handleChange, required: true })
           ),
           _react2.default.createElement(
-            _bootstrap.Col,
-            { className: "form-group", size: ["xs-12", "lg-2"] },
-            _react2.default.createElement(
-              "button",
-              { type: "submit", className: "btn btn-primary btn-ghost" },
-              "Send"
-            )
+            "button",
+            { type: "submit", id: "form-submit", className: "btn btn-info btn-lg pull-right " },
+            "Submit"
           )
         )
       );
