@@ -1,5 +1,7 @@
 export * from "./app";
 export * from "./code";
+export * from "./contact-form";
+export * from "./countdown";
 export * from "./customer-quotes";
 export * from "./figure";
 export * from "./footer";
@@ -13,8 +15,6 @@ export * from "./section";
 export * from "./signup-inline";
 export * from "./signup-modal";
 export * from "./team";
-export * from "./contact-form";
-export * from "./feature";
 export * from "./vendor/segment";
 export * from "./vendor/stripe";
 export * from "./vendor/typeform";
